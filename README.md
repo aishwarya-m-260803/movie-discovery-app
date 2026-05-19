@@ -1,36 +1,161 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  Movie Discovery App
 
-## Getting Started
+A modern **Netflix-style movie discovery web application** built using **Next.js**, **TypeScript**, and **Tailwind CSS**.  
+This app allows users to search movies in real-time, explore detailed information, and manage personalized lists like **Watchlist** and **Recently Viewed** — all with a smooth and responsive UI.
 
-First, run the development server:
+---
+
+##  Features
+
+### 🔍 Smart Live Search
+- Real-time movie search as the user types
+- Debounced API calls for better performance
+- Instant UI updates without page reloads
+
+---
+
+###  Movie Details Page
+- Dynamic routing using Next.js (`/movie/[id]`)
+- Displays:
+  - Title, Year, Genre
+  - IMDb Rating ⭐
+  - Plot summary
+- Clean, modern UI with hero-style layout
+
+---
+
+###  Watchlist (Local Persistence)
+- Add/remove movies to a personalized watchlist
+- Stored using `localStorage` (no backend required)
+- Real-time UI updates with toggle (❤️ / 🤍)
+
+---
+
+###  Recently Viewed
+- Tracks recently opened movies
+- Displays latest viewed movies on homepage
+- Automatically removes duplicates
+- Limited to recent 10 items for performance
+
+---
+
+###  Smooth Horizontal Scrolling UI
+- Netflix-style movie rows
+- Custom scroll buttons (← →)
+- Implemented using `useRef` and DOM manipulation
+
+---
+
+###  Modern UI/UX
+- Responsive design (mobile + desktop)
+- Tailwind CSS styling
+- Hover effects and transitions
+- Sticky navbar with blur effect
+
+---
+
+##  Key Concepts Implemented
+
+- ⚛️ React Hooks (`useState`, `useEffect`, `useRef`)
+- 🔄 State-driven UI updates
+- ⚡ Debouncing for optimized API calls
+- 🌐 API integration using OMDB
+- 💾 Local storage for persistence (watchlist & history)
+- 🔗 Dynamic routing with Next.js
+- 🧩 Reusable component architecture
+
+---
+
+##  Tech Stack
+
+| Technology     | Purpose                          |
+|---------------|----------------------------------|
+| Next.js       | Framework & routing              |
+| React         | Component-based UI               |
+| TypeScript    | Type safety                      |
+| Tailwind CSS  | Styling & responsiveness         |
+| OMDB API      | Movie data                       |
+
+---
+
+##  Project Structure
+
+```
+app/
+├── movie/
+│   ├── [id]/page.tsx        # Movie details page
+├── watchlist/
+│   ├── page.tsx             # Watchlist page
+├── components/
+│   ├── MovieCard.tsx
+├── page.tsx                 # Home page
+
+public/
+├── assets/
+
+.env.local                   # API key (not committed)
+```
+
+---
+
+##  Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/movie-discovery-app.git
+cd movie-discovery-app
+```
+
+---
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3. Add your OMDB API key
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_OMDB_API_KEY=your_api_key_here
+```
+
+---
+
+### 4. Run the app
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 5. Open in browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+http://localhost:3000
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+##  Future Enhancements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🔐 User authentication (login/signup)
+- ☁️ Backend integration (database for watchlist)
+- 🤖 AI-based movie recommendations
+- 🎥 Trailer integration (YouTube API)
+- 🎯 Genre-based filtering
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Aishwarya M**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
