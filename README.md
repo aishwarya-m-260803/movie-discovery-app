@@ -1,106 +1,62 @@
-#  Movie Discovery App
+# Movie Discovery App
 
 A modern **Netflix-style movie discovery web application** built using **Next.js**, **TypeScript**, and **Tailwind CSS**.  
 This app allows users to search movies in real-time, explore detailed information, and manage personalized lists like **Watchlist** and **Recently Viewed** — all with a smooth and responsive UI.
 
 ---
 
-##  Features
+## Features
 
 ### 🔍 Smart Live Search
-- Real-time movie search as the user types
-- Debounced API calls for better performance
-- Instant UI updates without page reloads
+- Real-time movie search as the user types  
+- Debounced API calls to reduce unnecessary requests  
+- Instant UI updates without page reloads  
 
 ---
 
-###  Movie Details Page
-- Dynamic routing using Next.js (`/movie/[id]`)
+### Movie Details Page
+- Dynamic routing using Next.js (`/movie/[id]`)  
 - Displays:
-  - Title, Year, Genre
-  - IMDb Rating ⭐
-  - Plot summary
-- Clean, modern UI with hero-style layout
+  - Title, Year, Genre  
+  - IMDb Rating ⭐  
+  - Plot summary  
+- Clean hero-style layout for better UX  
 
 ---
 
-###  Watchlist (Local Persistence)
-- Add/remove movies to a personalized watchlist
-- Stored using `localStorage` (no backend required)
-- Real-time UI updates with toggle (❤️ / 🤍)
+### Watchlist (My List)
+- Add/remove movies from watchlist  
+- Stored using `localStorage` (no backend required)  
+- Toggle UI (❤️ / 🤍) for real-time feedback  
+- Dedicated **Watchlist page**  
 
 ---
 
-###  Recently Viewed
-- Tracks recently opened movies
-- Displays latest viewed movies on homepage
-- Automatically removes duplicates
-- Limited to recent 10 items for performance
+### Recently Viewed
+- Tracks movies clicked by the user  
+- Displays recent movies on the homepage  
+- Automatically removes duplicates  
+- Limited to latest 10 items for performance  
 
 ---
 
-###  Smooth Horizontal Scrolling UI
-- Netflix-style movie rows
-- Custom scroll buttons (← →)
-- Implemented using `useRef` and DOM manipulation
+### Smooth Horizontal Scrolling
+- Netflix-style movie rows  
+- Scroll using custom arrow buttons (← →)  
+- Implemented using `useRef` and DOM manipulation  
 
 ---
 
-###  Modern UI/UX
-- Responsive design (mobile + desktop)
-- Tailwind CSS styling
-- Hover effects and transitions
-- Sticky navbar with blur effect
+### Modern UI/UX
+- Fully responsive design (mobile + desktop)  
+- Tailwind CSS styling  
+- Hover animations on movie cards  
+- Sticky navbar with blur effect  
+- Clean spacing and layout consistency  
 
 ---
 
-- Debounced API calls to reduce unnecessary requests
-- Instant UI updates without page reloads
-
----
-
-### 🎬 Movie Details Page
-- Dynamic routing using Next.js (`/movie/[id]`)
-- Displays:
-  - Title, Year, Genre
-  - IMDb Rating ⭐
-  - Plot summary
-- Clean hero-style layout for better UX
-
----
-
-### ❤️ Watchlist (My List)
-- Add/remove movies from watchlist
-- Stored using `localStorage` (no backend required)
-- Toggle UI (❤️ / 🤍) for real-time feedback
-- Dedicated **Watchlist page**
-
----
-
-### 🕓 Recently Viewed
-- Tracks movies clicked by the user
-- Displays recent movies on the homepage
-- Automatically removes duplicates
-- Limited to latest 10 items for performance
-
----
-
-### 🎯 Smooth Horizontal Scrolling
-- Netflix-style movie rows
-- Scroll using custom arrow buttons
-- Implemented using `useRef` and DOM manipulation
-
----
-
-### 🎨 UI & UX Enhancements
-- Fully responsive design
-- Sticky navbar with blur effect
-- Hover animations on movie cards
-- Clean spacing and layout consistency
-
----
-
-## 📸 Screenshots
+## Screenshots
 
 ### 🏠 Home Page
 ![Home](./public/screenshots/home1.png)
@@ -119,20 +75,19 @@ This app allows users to search movies in real-time, explore detailed informatio
 
 ---
 
+## Key Concepts Implemented
 
-##  Key Concepts Implemented
-
-- ⚛️ React Hooks (`useState`, `useEffect`, `useRef`)
-- 🔄 State-driven UI updates
-- ⚡ Debouncing for optimized API calls
-- 🌐 API integration using OMDB
-- 💾 Local storage for persistence (watchlist & history)
-- 🔗 Dynamic routing with Next.js
-- 🧩 Reusable component architecture
+- ⚛️ React Hooks (`useState`, `useEffect`, `useRef`)  
+- 🔄 State-driven UI updates  
+- ⚡ Debouncing for optimized API calls  
+- 🌐 API integration using OMDB  
+- 💾 LocalStorage for persistence (watchlist & history)  
+- 🔗 Dynamic routing with Next.js  
+- 🧩 Reusable component-based architecture  
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
 | Technology     | Purpose                          |
 |---------------|----------------------------------|
@@ -144,6 +99,9 @@ This app allows users to search movies in real-time, explore detailed informatio
 
 ---
 
+## Project Structure
+
+```
 app/
 ├── movie/
 │   ├── [id]/page.tsx        # Movie details page
@@ -161,12 +119,12 @@ public/
 
 ---
 
-##  Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/movie-discovery-app.git
+git clone https://github.com/aishwarya-m-260803/movie-discovery-app.git
 cd movie-discovery-app
 ```
 
@@ -206,13 +164,13 @@ http://localhost:3000
 
 ---
 
-##  Future Enhancements
+## Future Enhancements
 
-- 🔐 User authentication (login/signup)
-- ☁️ Backend integration (database for watchlist)
-- 🤖 AI-based movie recommendations
-- 🎥 Trailer integration (YouTube API)
-- 🎯 Genre-based filtering
+- 🔐 User authentication (login/signup)  
+- ☁️ Backend integration (database for watchlist)  
+- 🤖 AI-based movie recommendations  
+- 🎥 Trailer integration (YouTube API)  
+- 🎯 Genre-based filtering  
 
 ---
 
@@ -222,3 +180,4 @@ http://localhost:3000
 
 ---
 
+ 
