@@ -54,6 +54,72 @@ This app allows users to search movies in real-time, explore detailed informatio
 
 ---
 
+- Debounced API calls to reduce unnecessary requests
+- Instant UI updates without page reloads
+
+---
+
+### 🎬 Movie Details Page
+- Dynamic routing using Next.js (`/movie/[id]`)
+- Displays:
+  - Title, Year, Genre
+  - IMDb Rating ⭐
+  - Plot summary
+- Clean hero-style layout for better UX
+
+---
+
+### ❤️ Watchlist (My List)
+- Add/remove movies from watchlist
+- Stored using `localStorage` (no backend required)
+- Toggle UI (❤️ / 🤍) for real-time feedback
+- Dedicated **Watchlist page**
+
+---
+
+### 🕓 Recently Viewed
+- Tracks movies clicked by the user
+- Displays recent movies on the homepage
+- Automatically removes duplicates
+- Limited to latest 10 items for performance
+
+---
+
+### 🎯 Smooth Horizontal Scrolling
+- Netflix-style movie rows
+- Scroll using custom arrow buttons
+- Implemented using `useRef` and DOM manipulation
+
+---
+
+### 🎨 UI & UX Enhancements
+- Fully responsive design
+- Sticky navbar with blur effect
+- Hover animations on movie cards
+- Clean spacing and layout consistency
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](./public/screenshots/home1.png)
+
+### 🔍 Search Results
+![Search](./public/screenshots/search.png)
+
+### 🎬 Movie Details
+![Details](./public/screenshots/details.png)
+
+### ❤️ Watchlist
+![Watchlist](./public/screenshots/liked.png)
+
+### 🕓 Recently Viewed
+![Recently Viewed](./public/screenshots/recently-viewed.png)
+
+---
+
+
 ##  Key Concepts Implemented
 
 - ⚛️ React Hooks (`useState`, `useEffect`, `useRef`)
@@ -78,9 +144,6 @@ This app allows users to search movies in real-time, explore detailed informatio
 
 ---
 
-##  Project Structure
-
-```
 app/
 ├── movie/
 │   ├── [id]/page.tsx        # Movie details page
@@ -91,7 +154,7 @@ app/
 ├── page.tsx                 # Home page
 
 public/
-├── assets/
+├── screenshots/             # Project screenshots
 
 .env.local                   # API key (not committed)
 ```
